@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1646378011839
+Build-Jdk-Spec: 1.8
+Bundle-ManifestVersion: 2
+Bundle-Name: karaf-test-jpa-rest
+Bundle-SymbolicName: org.apache.karaf.test.karaf-test-jpa-rest
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Export-Package: org.karaf.test.jpa.rest;uses:="javax.ws.rs,org.karaf.tes
+ t.jpa.api";version="0.0.1"
+Import-Package: javax.ws.rs;version="[2.1,3)",org.karaf.test.jpa.api;ver
+ sion="[0.0,1)",org.karaf.test.jpa.blueprint.hibernate;version="[0.0,1)"
+ ,org.karaf.test.jpa.rest
+Provide-Capability: osgi.service;objectClass:List<String>="org.karaf.tes
+ t.jpa.rest.BookingServiceRest";uses:="org.karaf.test.jpa.rest"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.7))"
+Service-Component: OSGI-INF/org.karaf.test.jpa.rest.BookingServiceRest.x
+ ml
+Tool: Bnd-5.1.1.202006162103

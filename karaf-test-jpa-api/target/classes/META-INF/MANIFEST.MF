@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1646378008020
+Build-Jdk-Spec: 1.8
+Bundle-ManifestVersion: 2
+Bundle-Name: karaf-test-jpa-api
+Bundle-SymbolicName: org.apache.karaf.test.karaf-test-jpa-api
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Export-Package: org.karaf.test.jpa.api;uses:="javax.persistence";version
+ ="0.0.1"
+Import-Package: javax.persistence;version="[2,3)",org.hibernate.proxy,ja
+ vassist.util.proxy
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-5.1.1.202006162103
